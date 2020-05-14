@@ -1,0 +1,65 @@
+body{
+    background-color: #162447;
+    color: white;
+    font-family: 'Hind Vadodara', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#books-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.books{
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2.5%;
+    min-width: 210px;
+    min-height: 250px;
+    transition: 0.3s;
+}
+
+.books:hover{
+    transform: scale(1.1);
+}
+
+.books-header{
+    margin-top: 1px;
+}
+
+.empty-books{
+    align-items: center;
+    justify-content: center;
+}
+
+.book-title{
+    margin-bottom: 5%;
+}
+
+.book-author{
+    font-size: small;
+    margin-top: 1%;
+}
+
+
+.book-Status{
+    font-size: larger;
+}
+
+.book-options{
+    margin-bottom: 5%;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    border-style: none;
+}
