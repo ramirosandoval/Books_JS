@@ -3,6 +3,7 @@ body{
     color: white;
     font-family: 'Hind Vadodara', sans-serif;
     text-align: center;
+    margin: 0px;
 }
 
 h1{
@@ -13,6 +14,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 
 .books{
@@ -52,6 +54,7 @@ h1{
 
 .book-Status{
     font-size: larger;
+    color: #33c55f; /*make red when not finished*/
 }
 
 .book-options{
@@ -62,4 +65,33 @@ button{
     background-color: rgb(255, 255, 255);
     border-radius: 1%;
     border-style: none;
+}
+
+#page-footer{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.377);
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 1%;
+}
+
+#year:hover,#my-name:hover, a:hover{
+    text-shadow: 0px 0px 5px black;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.308);
+}
+
+#year, #github-link{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: white;
 }
