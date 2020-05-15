@@ -8,6 +8,32 @@
 </head>
 <body>
 
+    <div class="bookFormContainer">
+        
+
+        <div class="bookFormContent">
+            <header id="bookFormHeader">
+                <h2 id="bookFormTitle">Add a book!</h2>
+            </header>
+
+            <form id="newBookInfo">
+                <input type="text" placeholder="Title" class="newBookInput">
+                <input type="text" placeholder="Author" class="newBookInput">
+                <input type="number" placeholder="Pages" class="newBookInput">
+
+                <select id="newBookStatus">
+                    <option value="notReaded">I'm still reading it</option>
+                    <option value="alreadyReaded">I finished reading it</option>
+                </select>
+            </form>
+
+            <footer id="bookFormFooter">
+                <button id="cancelButton">Cancel</button>
+                <button id="addButton">Add book</button>
+            </footer>
+        </div>
+    </div>
+
     <h1 id="main-title">Library</h1>
 
     <main id="books-container">
@@ -17,13 +43,13 @@
                 <h3 class="book-author">George Orwell</h3>
             </header>
             
-            <p class="book-Status">Not finished.</p>
+            <p class="book-Status">Not Readed.</p>
             <p class="book-pages">324 pages.</p>
 
             <footer class="book-options">
-                <button class="editBook">Edit</button>
                 <button class="deleteBook">Delete</button>
-                <button class="raiseBookPosition">Up</button>
+                <button class="editBook">Readed</button>
+                <button class="raiseBookPosition">Raise</button>
             </footer>
         </div>
         
@@ -33,13 +59,13 @@
                 <h3 class="book-author">Stephen King</h3>
             </header>
             
-            <p class="book-Status">Finished.</p>
+            <p class="book-Status">Readed.</p>
             <p class="book-pages">1600 pages.</p>
 
             <footer class="book-options">
-                <button class="editBook">Edit</button>
                 <button class="deleteBook">Delete</button>
-                <button class="raiseBookPosition">Up</button>
+                <button class="editBook">Readed</button>
+                <button class="raiseBookPosition">Raise</button>
             </footer>
         </div>
 
@@ -49,13 +75,13 @@
                 <h3 class="book-author">H.P Lovecraft</h3>
             </header>
             
-            <p class="book-Status">Not finished.</p>
+            <p class="book-Status">Not Readed.</p>
             <p class="book-pages">150 pages.</p>
 
             <footer class="book-options">
-                <button class="editBook">Edit</button>
                 <button class="deleteBook">Delete</button>
-                <button class="raiseBookPosition">Up</button>
+                <button class="editBook">Readed</button>
+                <button class="raiseBookPosition">Raise</button>
             </footer>
         </div>
 
@@ -65,13 +91,13 @@
                 <h3 class="book-author">Richard Matheson</h3>
             </header>
             
-            <p class="book-Status">Finished.</p>
+            <p class="book-Status">Readed.</p>
             <p class="book-pages">160 pages.</p>
 
             <footer class="book-options">
-                <button class="editBook">Edit</button>
                 <button class="deleteBook">Delete</button>
-                <button class="raiseBookPosition">Up</button>
+                <button class="editBook">Readed</button>
+                <button class="raiseBookPosition">Raise</button>
             </footer>
         </div>
 
@@ -98,8 +124,8 @@
         </h2>
 
         <h3 id="my-name">Ramiro Sandoval</h3>
-
-        <p id="year">2020</p>
     </footer>
 </body>
+
+    <script src="/scripts/books.js "></script>
 </html>

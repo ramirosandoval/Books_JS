@@ -6,6 +6,86 @@ body{
     margin: 0px;
 }
 
+.bookFormContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-content: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.bookFormContent{
+    background-color: #162447;
+    border-radius: 5px;
+    padding: 1%;
+    height: 50%;
+    width: 25%;
+    z-index: 2;
+}
+
+#bookFormHeader{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#bookFormFooter{
+    margin-top: 6%;
+}
+
+#cancelButton, #addButton{
+    padding: 5px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+#cancelButton{
+    background-color: #f85151;
+    margin-right: 15px;
+}
+
+#addButton{
+    background-color: #33c55f;
+    margin-left: 15px;
+}
+
+#book-form{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.newBookInput{
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 5%;
+    padding: 5px 15px;
+    height: 25px;
+}
+
+#newBookInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#newBookStatus{
+    border: none;
+    border-radius: 2px;
+    text-indent: 10px;
+    padding: 5px 0 5px 0;
+}
+
 h1{
     font-size: 40px;
 }
@@ -30,7 +110,7 @@ h1{
 }
 
 .books:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .books-header{
@@ -59,13 +139,15 @@ h1{
 
 .book-options{
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
 }
-
+/* 
 button{
     background-color: rgb(255, 255, 255);
     border-radius: 1%;
     border-style: none;
-}
+} */
 
 #page-footer{
     align-items: center;
@@ -76,7 +158,7 @@ button{
     padding: 0% 1%;
 }
 
-#year:hover,#my-name:hover, a:hover{
+#my-name:hover, a:hover{
     text-shadow: 0px 0px 5px black;
 }
 
@@ -84,7 +166,7 @@ a:hover{
     color: rgba(255, 255, 255, 0.308);
 }
 
-#year, #github-link{
+#github-link{
     font-size: 20px;
 }
 
@@ -94,4 +176,18 @@ a{
 
 a:link, a:visited{
     color: white;
+}
+
+.editBook, .deleteBook, .raiseBookPosition, .addBook{
+    background-color: #33c55f;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.addBook{
+    padding: 5px 5px;
 }
