@@ -7,10 +7,7 @@
     <title>Library</title>
 </head>
 <body>
-
     <div class="bookFormContainer">
-        
-
         <div class="bookFormContent">
             <header id="bookFormHeader">
                 <h2 id="bookFormTitle">Add a book!</h2>
@@ -35,6 +32,7 @@
     </div>
 
     <h1 id="main-title">Library</h1>
+    <button id="mainAddButton">Add a book</button>
 
     <main id="books-container">
         <div class="books" id="first-book-container">
@@ -43,13 +41,13 @@
                 <h3 class="book-author">George Orwell</h3>
             </header>
             
-            <p class="book-Status">Not Readed.</p>
+            <p class="book-Status">Not readed.</p>
             <p class="book-pages">324 pages.</p>
 
             <footer class="book-options">
                 <button class="deleteBook">Delete</button>
-                <button class="editBook">Readed</button>
-                <button class="raiseBookPosition">Raise</button>
+                <button class="editBookStatus">Readed</button>
+                <button class="makeBookFavorite">Favorite</button>
             </footer>
         </div>
         
@@ -64,8 +62,8 @@
 
             <footer class="book-options">
                 <button class="deleteBook">Delete</button>
-                <button class="editBook">Readed</button>
-                <button class="raiseBookPosition">Raise</button>
+                <button class="editBookStatus">Readed</button>
+                <button class="makeBookFavorite">Favorite</button>
             </footer>
         </div>
 
@@ -75,13 +73,13 @@
                 <h3 class="book-author">H.P Lovecraft</h3>
             </header>
             
-            <p class="book-Status">Not Readed.</p>
+            <p class="book-Status">Not readed.</p>
             <p class="book-pages">150 pages.</p>
 
             <footer class="book-options">
                 <button class="deleteBook">Delete</button>
-                <button class="editBook">Readed</button>
-                <button class="raiseBookPosition">Raise</button>
+                <button class="editBookStatus">Readed</button>
+                <button class="makeBookFavorite">Favorite</button>
             </footer>
         </div>
 
@@ -96,35 +94,11 @@
 
             <footer class="book-options">
                 <button class="deleteBook">Delete</button>
-                <button class="editBook">Readed</button>
-                <button class="raiseBookPosition">Raise</button>
+                <button class="editBookStatus">Readed</button>
+                <button class="makeBookFavorite">Favorite</button>
             </footer>
         </div>
-
-        <div class="books empty-books" id="fifth-book-container">
-            <button class="addBook">Click here to add a book!</button>
-        </div>
-
-        <div class="books empty-books" id="sixth-book-container">
-            <button class="addBook">Click here to add a book!</button>
-        </div>
-
-        <div class="books empty-books" id="seventh-book-container">
-            <button class="addBook">Click here to add a book!</button>
-        </div>
-
-        <div class="books empty-books" id="eigth-book-container">
-            <button class="addBook">Click here to add a book!</button>
-        </div>
     </main>
-    
-    <footer id="page-footer">
-        <h2 id="my-github">
-            <a href="http://github.com/smRamiro" id="github-link" target="_blank">My github</a>
-        </h2>
-
-        <h3 id="my-name">Ramiro Sandoval</h3>
-    </footer>
 </body>
 
     <script src="/scripts/books.js "></script>
